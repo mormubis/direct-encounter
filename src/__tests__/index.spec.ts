@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { directEncounter } from '../direct-encounter.js';
+import { directEncounter } from '../index.js';
 
 import type { Game, Player } from '../types.js';
 
