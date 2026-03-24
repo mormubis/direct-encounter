@@ -4,7 +4,7 @@ import type { Game, Player } from './types.js';
 
 function directEncounter(
   playerId: string,
-  games: Game[],
+  games: Game[][],
   players: Player[],
 ): number {
   const playerScore = score(playerId, games);

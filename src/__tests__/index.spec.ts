@@ -11,13 +11,19 @@ import type { Game, Player } from '../types.js';
 // Scores: A=2.5, D=2.5, B=1, C=0
 const PLAYERS: Player[] = [{ id: 'A' }, { id: 'B' }, { id: 'C' }, { id: 'D' }];
 
-const GAMES: Game[] = [
-  { blackId: 'B', result: 1, round: 1, whiteId: 'A' },
-  { blackId: 'D', result: 0, round: 1, whiteId: 'C' },
-  { blackId: 'D', result: 0.5, round: 2, whiteId: 'A' },
-  { blackId: 'B', result: 0, round: 2, whiteId: 'C' },
-  { blackId: 'C', result: 1, round: 3, whiteId: 'A' },
-  { blackId: 'B', result: 1, round: 3, whiteId: 'D' },
+const GAMES: Game[][] = [
+  [
+    { blackId: 'B', result: 1, whiteId: 'A' },
+    { blackId: 'D', result: 0, whiteId: 'C' },
+  ],
+  [
+    { blackId: 'D', result: 0.5, whiteId: 'A' },
+    { blackId: 'B', result: 0, whiteId: 'C' },
+  ],
+  [
+    { blackId: 'C', result: 1, whiteId: 'A' },
+    { blackId: 'B', result: 1, whiteId: 'D' },
+  ],
 ];
 
 describe('directEncounter', () => {
