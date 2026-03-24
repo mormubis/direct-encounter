@@ -82,7 +82,7 @@ pnpm lint && pnpm test && pnpm build
   can filter `games` accordingly.
 - The function sums the points scored by `playerId` in games where both
   participants are members of the `players` array.
-- A `Game` with `blackId: ''` (empty string) represents a **bye**. Byes are
+- A `Game` with `black: ''` (empty string) represents a **bye**. Byes are
   excluded from Direct Encounter calculations — there is no real opponent.
 - When all tied players have identical Direct Encounter scores (which is the
   common case in Swiss), this tiebreak is inconclusive and the next tiebreak in

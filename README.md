@@ -25,9 +25,9 @@ import { directEncounter } from '@echecs/direct-encounter';
 const players = [{ id: 'A' }, { id: 'B' }, { id: 'C' }];
 // games[n] = round n+1; Game has no `round` field
 const games = [
-  [{ blackId: 'B', result: 1, whiteId: 'A' }], // round 1
-  [{ blackId: 'C', result: 0.5, whiteId: 'A' }], // round 2
-  [{ blackId: 'C', result: 0, whiteId: 'B' }], // round 3
+  [{ black: 'B', result: 1, white: 'A' }], // round 1
+  [{ black: 'C', result: 0.5, white: 'A' }], // round 2
+  [{ black: 'C', result: 0, white: 'B' }], // round 3
 ];
 
 const score = directEncounter('A', games, players);

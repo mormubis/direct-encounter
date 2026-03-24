@@ -16,12 +16,12 @@ function directEncounter(
 
   let sum = 0;
   for (const g of gamesForPlayer(playerId, games)) {
-    if (g.blackId === BYE_SENTINEL || g.whiteId === BYE_SENTINEL) {
+    if (g.black === BYE_SENTINEL || g.white === BYE_SENTINEL) {
       continue;
     }
-    const opponentId = g.whiteId === playerId ? g.blackId : g.whiteId;
+    const opponentId = g.white === playerId ? g.black : g.white;
     if (tiedPlayerIds.has(opponentId)) {
-      sum += g.whiteId === playerId ? g.result : 1 - g.result;
+      sum += g.white === playerId ? g.result : 1 - g.result;
     }
   }
   return sum;
