@@ -48,7 +48,6 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "dist/index.js",
   "name": "@echecs/direct-encounter",
   "publishConfig": {
     "access": "public"
@@ -72,6 +71,5 @@
   },
   "sideEffects": false,
   "type": "module",
-  "types": "dist/index.d.ts",
-  "version": "0.3.0"
+  "version": "1.0.0"
 }
