@@ -1,4 +1,4 @@
-import { BYE_SENTINEL, gamesForPlayer, score } from './utilities.js';
+import { gamesForPlayer, score } from './utilities.js';
 
 import type { Game, Player } from './types.js';
 
@@ -16,7 +16,7 @@ function directEncounter(
 
   let sum = 0;
   for (const g of gamesForPlayer(player, games)) {
-    if (g.black === BYE_SENTINEL || g.white === BYE_SENTINEL) {
+    if (g.black === g.white) {
       continue;
     }
     const opponent = g.white === player ? g.black : g.white;

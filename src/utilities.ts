@@ -1,7 +1,5 @@
 import type { Game } from './types.js';
 
-const BYE_SENTINEL = '';
-
 function gamesForPlayer(player: string, games: Game[][]): Game[] {
   return games.flat().filter((g) => g.white === player || g.black === player);
 }
@@ -14,4 +12,4 @@ function score(player: string, games: Game[][]): number {
   return sum;
 }
 
-export { BYE_SENTINEL, gamesForPlayer, score };
+export { gamesForPlayer, score };
