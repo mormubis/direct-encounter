@@ -1,7 +1,6 @@
 # Direct Encounter
 
 [![npm](https://img.shields.io/npm/v/@echecs/direct-encounter)](https://www.npmjs.com/package/@echecs/direct-encounter)
-[![Test](https://github.com/mormubis/direct-encounter/actions/workflows/test.yml/badge.svg)](https://github.com/mormubis/direct-encounter/actions/workflows/test.yml)
 [![Coverage](https://codecov.io/gh/mormubis/direct-encounter/branch/main/graph/badge.svg)](https://codecov.io/gh/mormubis/direct-encounter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
