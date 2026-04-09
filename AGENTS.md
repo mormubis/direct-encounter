@@ -4,6 +4,8 @@ Agent guidance for the `@echecs/direct-encounter` repository — a TypeScript
 library implementing the Direct Encounter tiebreak following FIDE Tiebreak
 Regulations (section 6).
 
+**See also:** [`REFERENCES.md`](REFERENCES.md) | [`SPEC.md`](SPEC.md)
+
 See the root `AGENTS.md` for workspace-wide conventions.
 
 **Backlog:** tracked in
@@ -97,6 +99,16 @@ pnpm lint && pnpm test && pnpm build
   the ordering is applied by the caller.
 - **No runtime dependencies** — keep it that way.
 - **ESM-only** — the package ships only ESM. Do not add a CJS build.
+
+---
+
+## Tiebreak Signature
+
+All tiebreak functions consumed by `@echecs/tournament` must conform to:
+
+```typescript
+(playerId: string, games: Game[], players: Map<string, Player>) => number;
+```
 
 ---
 
